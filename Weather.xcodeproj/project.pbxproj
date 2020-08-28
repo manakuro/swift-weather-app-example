@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE55858C24F91B650045D452 /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BE55858924F91B650045D452 /* 740-gear-toolbar.png */; };
+		BE55858D24F91B650045D452 /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE55858A24F91B650045D452 /* 740-gear-toolbar@3x.png */; };
+		BE55858E24F91B650045D452 /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE55858B24F91B650045D452 /* 740-gear-toolbar@2x.png */; };
+		BE55859024F91CFB0045D452 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55858F24F91CFB0045D452 /* SettingsTableViewController.swift */; };
+		BE55859224F91F290045D452 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55859124F91F290045D452 /* SettingsViewModel.swift */; };
 		BE6A339924F7876A00C44F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A339824F7876A00C44F71 /* AppDelegate.swift */; };
 		BE6A339B24F7876A00C44F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A339A24F7876A00C44F71 /* SceneDelegate.swift */; };
 		BE6A33A024F7876A00C44F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6A339E24F7876A00C44F71 /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE55858924F91B650045D452 /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar.png"; path = "../../../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar.png"; sourceTree = "<group>"; };
+		BE55858A24F91B650045D452 /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@3x.png"; path = "../../../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
+		BE55858B24F91B650045D452 /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear-toolbar@2x.png"; path = "../../../../../../Downloads/displaying-settings-screen/end/GoodWeather/GoodWeather/Images/740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
+		BE55858F24F91CFB0045D452 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		BE55859124F91F290045D452 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		BE6A339524F7876A00C44F71 /* Weather-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6A339824F7876A00C44F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6A339A24F7876A00C44F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE55858824F91B3F0045D452 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BE55858924F91B650045D452 /* 740-gear-toolbar.png */,
+				BE55858B24F91B650045D452 /* 740-gear-toolbar@2x.png */,
+				BE55858A24F91B650045D452 /* 740-gear-toolbar@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		BE6A338C24F7876A00C44F71 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 		BE6A339724F7876A00C44F71 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BE55858824F91B3F0045D452 /* Images */,
 				BE6A33C724F8E2E500C44F71 /* Config */,
 				BE6A33BF24F8C40000C44F71 /* Extensions */,
 				BE6A33B824F7A50F00C44F71 /* View Models */,
@@ -98,6 +119,7 @@
 			children = (
 				BE6A33AD24F789AE00C44F71 /* WeatherListTableViewController.swift */,
 				BE6A33AF24F789E000C44F71 /* AddWeatherCityViewController.swift */,
+				BE55858F24F91CFB0045D452 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				BE6A33B924F7A52200C44F71 /* WeatherListViewModel.swift */,
+				BE55859124F91F290045D452 /* SettingsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -211,7 +234,10 @@
 			files = (
 				BE6A33A524F7876F00C44F71 /* LaunchScreen.storyboard in Resources */,
 				BE6A33A224F7876F00C44F71 /* Assets.xcassets in Resources */,
+				BE55858C24F91B650045D452 /* 740-gear-toolbar.png in Resources */,
 				BE6A33A024F7876A00C44F71 /* Main.storyboard in Resources */,
+				BE55858D24F91B650045D452 /* 740-gear-toolbar@3x.png in Resources */,
+				BE55858E24F91B650045D452 /* 740-gear-toolbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +256,8 @@
 				BE6A33B624F7A0CE00C44F71 /* Webservice.swift in Sources */,
 				BE6A33BA24F7A52200C44F71 /* WeatherListViewModel.swift in Sources */,
 				BE6A33C924F8E32A00C44F71 /* Environment.swift in Sources */,
+				BE55859224F91F290045D452 /* SettingsViewModel.swift in Sources */,
+				BE55859024F91CFB0045D452 /* SettingsTableViewController.swift in Sources */,
 				BE6A33B324F7916600C44F71 /* WeatherCell.swift in Sources */,
 				BE6A33B024F789E000C44F71 /* AddWeatherCityViewController.swift in Sources */,
 				BE6A339B24F7876A00C44F71 /* SceneDelegate.swift in Sources */,

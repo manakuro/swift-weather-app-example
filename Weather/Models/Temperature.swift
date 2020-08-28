@@ -8,7 +8,7 @@
 import Foundation
 
 struct Temperature: Decodable {
-  let temp: Double
-  let temp_min: Double;
-  let temp_max: Double;
+  var temp: Double
+  var temp_min: Double;
+  var temp_max: Double;
 }

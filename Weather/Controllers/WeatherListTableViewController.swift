@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
+class WeatherListTableViewController: UITableViewController {
   private var weatherListViewModel = WeatherListViewModel()
   
   override func viewDidLoad() {
@@ -40,19 +40,49 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "AddWeatherCityViewController" {
+      prepareSegueForAddWeatherCityViewController(segue: segue)
+    } else if segue.identifier == "SettingsTableViewController" {
+      prepareSegueForSettingsTableViewController(segue: segue)
+    }
+  }
+  
+  private func prepareSegueForAddWeatherCityViewController(segue: UIStoryboardSegue) {
     guard let nav = segue.destination as? UINavigationController else {
       fatalError("NAV NOT FOUND")
     }
     
-    guard let addWeatherCityVC = nav.viewControllers.first as? AddWeatherCityViewController else {
+    guard let vc = nav.viewControllers.first as? AddWeatherCityViewController else {
       fatalError("AddWeatherCityViewController NOT FOUND")
     }
     
-    addWeatherCityVC.delegate = self
+    vc.delegate = self
   }
   
+  private func prepareSegueForSettingsTableViewController(segue: UIStoryboardSegue) {
+    guard let nav = segue.destination as? UINavigationController else {
+      fatalError("NAV NOT FOUND")
+    }
+    
+    guard let vc = nav.viewControllers.first as? SettingsTableViewController else {
+      fatalError("SettingsTableViewController NOT FOUND")
+    }
+    
+    vc.delegate = self
+  }
+}
+
+extension WeatherListTableViewController: AddWeatherDelegate {
   func addWeatherDidSave(vm: WeatherViewModel) {
     self.weatherListViewModel.set(vm)
+    self.tableView.reloadData()
+  }
+}
+
+
+extension WeatherListTableViewController: SettingsDelegate {
+  func settingsDone(vm: SettingsViewModel) {
+    self.weatherListViewModel.updateUnit(to: vm.selectedUnit)
     self.tableView.reloadData()
   }
 }
