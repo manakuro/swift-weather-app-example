@@ -1,5 +1,5 @@
 //
-//  Config.Dev.xcconfig
+//  Config.Release.xcconfig
 //  Weather
 //
 //  Copyright © 2020 manato. All rights reserved.
@@ -7,10 +7,11 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-PRODUCT_NAME=Weather-Debug
 
-PRODUCT_BUNDLE_IDENTIFIER=com.manato.Weather-Debug
+PRODUCT_NAME=Weather-Release
 
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "DEBUG"
+PRODUCT_BUNDLE_IDENTIFIER=com.manato.Weather-Release
+
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "Release"
 
 INFOPLIST_FILE=Weather/Info.plist
