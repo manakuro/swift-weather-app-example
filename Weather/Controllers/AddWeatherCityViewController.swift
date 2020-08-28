@@ -19,7 +19,7 @@ class AddWeatherCityViewController: UIViewController {
   
   @IBAction func saveCityButtonPressed() {
     if let city = cityNameTextField.text {
-      let url = URL(string: "https://samples.openweathermap.org/data/2.5/weather?q=\(city)&appid=bb1e6ff97f4359eae5aee94aeabe666c")!
+      let url = URL(string: "\(Environment.API_URL)&q=\(city)")!
       
       let resource = Resource<Weather>(url: url) { data in
         guard let data = try? JSONDecoder().decode(Weather.self, from: data) else {

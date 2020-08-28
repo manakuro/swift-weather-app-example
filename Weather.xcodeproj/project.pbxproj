@@ -20,6 +20,7 @@
 		BE6A33BC24F7A6C900C44F71 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33BB24F7A6C900C44F71 /* Weather.swift */; };
 		BE6A33BE24F7A80D00C44F71 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33BD24F7A80D00C44F71 /* Temperature.swift */; };
 		BE6A33C124F8C41700C44F71 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33C024F8C41700C44F71 /* DoubleExtensions.swift */; };
+		BE6A33C924F8E32A00C44F71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33C824F8E32A00C44F71 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BE6A33C024F8C41700C44F71 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		BE6A33C224F8CC1500C44F71 /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
 		BE6A33C624F8D94800C44F71 /* Config.Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Release.xcconfig; sourceTree = "<group>"; };
+		BE6A33C824F8E32A00C44F71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		BE6A339724F7876A00C44F71 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BE6A33C724F8E2E500C44F71 /* Config */,
 				BE6A33BF24F8C40000C44F71 /* Extensions */,
 				BE6A33B824F7A50F00C44F71 /* View Models */,
 				BE6A33B724F7A49600C44F71 /* Models */,
@@ -138,6 +141,14 @@
 				BE6A33C024F8C41700C44F71 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE6A33C724F8E2E500C44F71 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A33C824F8E32A00C44F71 /* Environment.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				BE6A339924F7876A00C44F71 /* AppDelegate.swift in Sources */,
 				BE6A33B624F7A0CE00C44F71 /* Webservice.swift in Sources */,
 				BE6A33BA24F7A52200C44F71 /* WeatherListViewModel.swift in Sources */,
+				BE6A33C924F8E32A00C44F71 /* Environment.swift in Sources */,
 				BE6A33B324F7916600C44F71 /* WeatherCell.swift in Sources */,
 				BE6A33B024F789E000C44F71 /* AddWeatherCityViewController.swift in Sources */,
 				BE6A339B24F7876A00C44F71 /* SceneDelegate.swift in Sources */,
