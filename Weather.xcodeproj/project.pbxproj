@@ -26,6 +26,8 @@
 		BE6A33BE24F7A80D00C44F71 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33BD24F7A80D00C44F71 /* Temperature.swift */; };
 		BE6A33C124F8C41700C44F71 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33C024F8C41700C44F71 /* DoubleExtensions.swift */; };
 		BE6A33C924F8E32A00C44F71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A33C824F8E32A00C44F71 /* Environment.swift */; };
+		BED603D72500A94900B607EC /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED603D62500A94900B607EC /* AddCityViewModel.swift */; };
+		BED603DA2500A9B000B607EC /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED603D92500A9B000B607EC /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		BE6A33C224F8CC1500C44F71 /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
 		BE6A33C624F8D94800C44F71 /* Config.Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Release.xcconfig; sourceTree = "<group>"; };
 		BE6A33C824F8E32A00C44F71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BED603D62500A94900B607EC /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
+		BED603D92500A9B000B607EC /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		BE6A339724F7876A00C44F71 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BED603D82500A99B00B607EC /* Custom Controls */,
 				BE55858824F91B3F0045D452 /* Images */,
 				BE6A33C724F8E2E500C44F71 /* Config */,
 				BE6A33BF24F8C40000C44F71 /* Extensions */,
@@ -154,6 +159,7 @@
 			children = (
 				BE6A33B924F7A52200C44F71 /* WeatherListViewModel.swift */,
 				BE55859124F91F290045D452 /* SettingsViewModel.swift */,
+				BED603D62500A94900B607EC /* AddCityViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -172,6 +178,14 @@
 				BE6A33C824F8E32A00C44F71 /* Environment.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		BED603D82500A99B00B607EC /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				BED603D92500A9B000B607EC /* BindingTextField.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,12 +269,14 @@
 				BE6A339924F7876A00C44F71 /* AppDelegate.swift in Sources */,
 				BE6A33B624F7A0CE00C44F71 /* Webservice.swift in Sources */,
 				BE6A33BA24F7A52200C44F71 /* WeatherListViewModel.swift in Sources */,
+				BED603DA2500A9B000B607EC /* BindingTextField.swift in Sources */,
 				BE6A33C924F8E32A00C44F71 /* Environment.swift in Sources */,
 				BE55859224F91F290045D452 /* SettingsViewModel.swift in Sources */,
 				BE55859024F91CFB0045D452 /* SettingsTableViewController.swift in Sources */,
 				BE6A33B324F7916600C44F71 /* WeatherCell.swift in Sources */,
 				BE6A33B024F789E000C44F71 /* AddWeatherCityViewController.swift in Sources */,
 				BE6A339B24F7876A00C44F71 /* SceneDelegate.swift in Sources */,
+				BED603D72500A94900B607EC /* AddCityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,13 @@
             ReferencedContainer = "container:Weather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "API_URL"
+            value = "https://samples.openweathermap.org/data/2.5/weather?appid=bb1e6ff97f4359eae5aee94aeabe666c"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

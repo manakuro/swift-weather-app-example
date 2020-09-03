@@ -114,26 +114,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-Lw-CBc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-Lw-CBc" customClass="BindingTextField" customModule="Weather_Debug" customModuleProvider="target">
                                 <rect key="frame" x="20" y="101" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJS-Uv-kbr" customClass="BindingTextField" customModule="Weather_Debug" customModuleProvider="target">
+                                <rect key="frame" x="20" y="153" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv0-g2-6uP">
-                                <rect key="frame" x="184" y="161" width="34" height="30"/>
+                                <rect key="frame" x="190" y="327" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveCityButtonPressed" destination="coh-Cw-cIA" eventType="touchUpInside" id="WZa-Wh-1nM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJ1-1d-bzF" customClass="BindingTextField" customModule="Weather_Debug" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xzf-Lw-CBc" firstAttribute="leading" secondItem="D7L-k9-RMx" secondAttribute="leadingMargin" id="YdC-LI-dbb"/>
                             <constraint firstItem="xzf-Lw-CBc" firstAttribute="trailing" secondItem="D7L-k9-RMx" secondAttribute="trailingMargin" id="gs4-QJ-E7f"/>
                             <constraint firstItem="xzf-Lw-CBc" firstAttribute="top" secondItem="jdq-tm-DDI" secondAttribute="top" constant="45" id="hB7-ka-sOW"/>
-                            <constraint firstItem="rv0-g2-6uP" firstAttribute="leading" secondItem="jdq-tm-DDI" secondAttribute="leading" constant="184" id="ldP-kg-bGz"/>
-                            <constraint firstItem="rv0-g2-6uP" firstAttribute="top" secondItem="xzf-Lw-CBc" secondAttribute="bottom" constant="26" id="mJv-Ug-8Db"/>
+                            <constraint firstItem="rv0-g2-6uP" firstAttribute="leading" secondItem="jdq-tm-DDI" secondAttribute="leading" constant="190" id="ldP-kg-bGz"/>
+                            <constraint firstItem="rv0-g2-6uP" firstAttribute="top" secondItem="xzf-Lw-CBc" secondAttribute="bottom" constant="192" id="mJv-Ug-8Db"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jdq-tm-DDI"/>
                     </view>
@@ -146,6 +158,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameTextField" destination="xzf-Lw-CBc" id="4hH-w2-Y5p"/>
+                        <outlet property="stateTextField" destination="hJS-Uv-kbr" id="y3G-hu-ewD"/>
+                        <outlet property="zipCodeTextField" destination="jJ1-1d-bzF" id="cxQ-ch-VTJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IS-bd-9LI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
